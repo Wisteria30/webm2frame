@@ -5,7 +5,7 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		"context": "..",
-		"args": { 
+		"args": {
 			// Update 'VARIANT' to pick a Python version: 3, 3.9, 3.8, 3.7, 3.6.
 			// Append -bullseye or -buster to pin to an OS version.
 			// Use -bullseye variants on local on arm64/Apple Silicon.
@@ -14,13 +14,13 @@
 			"NODE_VERSION": "lts/*"
 		}
 	},
-		
+
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
-			"settings": { 
+			"settings": {
 				"terminal.integrated.profiles.linux": {
 					"bash": {
 						"path": "/bin/bash"
@@ -40,9 +40,22 @@
 				"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
 				"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint"
 			},
-			
+
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
+				"visualstudioexptteam.vscodeintellicode",
+				"github.copilot",
+				"eamodio.gitlens",
+				"mhutchie.git-graph",
+				"usernamehw.errorlens",
+				"ms-ceintl.vscode-language-pack-ja",
+				"monokai.theme-monokai-pro-vscode",
+				"oderwat.indent-rainbow",
+				"shardulm94.trailing-spaces",
+				"coenraads.bracket-pair-colorizer-2",
+				"mechatroner.rainbow-csv",
+				"redhat.vscode-yaml",
+				"kaiwood.endwise",
 				"ms-python.python",
 				"ms-python.vscode-pylance"
 			]

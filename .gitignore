@@ -330,3 +330,5 @@ ASALocalRun/
 .mfractor/
 
 *.DS_Store
+.mypy_cache/
+data/

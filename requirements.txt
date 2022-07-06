@@ -1,1 +1,9 @@
-flask
+moviepy
+Pillow
+numpy
+matplotlib
+natsort
+pandas
+opencv-python
+tqdm
+pyyaml
