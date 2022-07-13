@@ -7,3 +7,5 @@ pandas
 opencv-python
 tqdm
 pyyaml
+jupyterlab
+click
