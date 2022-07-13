@@ -53,9 +53,9 @@ def save_frameN(
 )
 @click.option("--msb_dir", default="data/V3C2/msb", help="msb dir")
 @click.option("--save_origin", default="data/V3C2/frames", help="save origin dir")
-@click.option("--delta", default=3, help="delta frame")
-@click.option("--start", default=None, help="video start")
-@click.option("--end", default=None, help="video end")
+@click.option("--delta", default=3, type=int, help="delta frame")
+@click.option("--start", default=None, type=int, help="video start")
+@click.option("--end", default=None, type=int, help="video end")
 def main(video_origin, msb_dir, save_origin, delta, start, end) -> None:
     video_dirs = natsorted(os.listdir(video_origin))
     msb_files = natsorted(os.listdir(msb_dir))
