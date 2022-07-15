@@ -48,7 +48,7 @@ def save_frameN(
             frame_N = [i / clip.fps for i in range(start_frame, end_frame + 1)]
 
         for i, t in enumerate(frame_N):
-            path = op.join(save_dir, f"frame{i:04}.png")
+            path = op.join(save_dir, f"{i:04}.png")
             if op.exists(path):
                 print(f"{path} already exists")
                 continue
